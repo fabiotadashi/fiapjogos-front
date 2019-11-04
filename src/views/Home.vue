@@ -1,16 +1,15 @@
 <template>
   <div class="home">
-    <v-container grid-list-md>
-      <v-layout row wrap>
-          <v-flex xs12 sm6 md4 lg3 v-for="game in gameList" :key="game.name">
-
+    <v-container>
+      <v-row >
+          <v-col v-for="game in gameList" :key="game.name">
               <v-card >
                 <router-link :to="{ name: 'game', params: { gameId: game.name }}" class="link">
                   <v-img
                     :src="game.imageUrl"
                     class="white--text align-end"
                     gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                    height="200px"
+                    height="400px"
                   >
                     <v-card-title primary-title>
                       {{game.name}}
@@ -19,8 +18,8 @@
                 </router-link>
               </v-card>
                           
-          </v-flex>
-      </v-layout>
+          </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
