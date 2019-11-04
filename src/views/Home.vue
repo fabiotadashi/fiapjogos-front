@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <v-container>
-      <v-row >
+      <v-row class='pa-2'>
           <v-col v-for="game in gameList" :key="game.name">
               <v-card >
                 <router-link :to="{ name: 'game', params: { gameId: game.name }}" class="link">
