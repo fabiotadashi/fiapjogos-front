@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <v-app-bar app >
       <v-toolbar-title class="headline">
         <router-link to="/" class="link">
             <span>FIAP</span>
@@ -34,6 +34,5 @@ export default {
 <style>
   .link {
     text-decoration: none;
-    color: grey!important;
   }
 </style>
