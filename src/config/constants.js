@@ -1,1 +1,1 @@
-export const BASE_URL = 'http://localhost:8888/fiapjogos'
+export const BASE_URL = 'http://fiapjogos.herokuapp.com/fiapjogos'
