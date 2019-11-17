@@ -74,7 +74,7 @@ export default {
     return {
       game: {},
       categorias:["ACTION","ADVENTURE","RPG","OTHER"],
-      showSnackbar: false
+      snackbar: false
     }
   },
   methods: {
